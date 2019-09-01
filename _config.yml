@@ -1,0 +1,31 @@
+# Site settings
+title: Sercan GEZER #website title
+description: > # this means to ignore newlines until "baseurl:"
+  Sistem yöneticisi Sercan GEZER kişisel blogu
+url: #https://kuoa.github.io # the base hostname & protocol for your site
+baseurl: # the sub-path of your site, e.g. /blog/
+
+disqus_shortname: sercangezer # leave empty if you don't want comments
+google_analytics: false #if set to "true" modify the google_analytycs.html, set to false otherwise
+
+# Links settings
+links:
+  - name:         Anasayfa
+    url:          /
+  - name:         Linkedin
+    url:          https://www.linkedin.com/in/sercangezer/
+    external:     true
+  - name:         Arşiv
+    url:          /archive
+#    external:     false
+#    external:     false
+#  - name:         GitHub
+#    url:          http://github.com/kuoa
+#    external:     true
+
+# Build settings
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]

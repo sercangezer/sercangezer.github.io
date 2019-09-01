@@ -1,1 +1,1 @@
-# sercangezer.github.io
+# Sercan GEZER personal blog
