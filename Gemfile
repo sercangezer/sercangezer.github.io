@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in julia-jejyll-theme.gemspec
-gem 'kramdown'
-gem 'jekyll-watch'
-gem 'rouge'
-
-gem "jekyll", "~> 4.0"
+gem 'wdm', '~> 0.1.0' if Gem.win_platform?
+gem 'rake'
+gem 'jekyll'
+gem 'html-proofer'

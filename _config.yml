@@ -1,31 +1,41 @@
-# Site settings
-title: Sercan GEZER #website title
-description: > # this means to ignore newlines until "baseurl:"
-  Sistem yöneticisi Sercan GEZER kişisel blogu
-url: #https://kuoa.github.io # the base hostname & protocol for your site
-baseurl: # the sub-path of your site, e.g. /blog/
+# Core Jekyll Configuration
+locale                : 'tr'
+source                : 'jekyll'
+destination           : 'html'
+url                   : 'http://sercangezer.github.io'
+#enforce_ssl           : 'www.groveld.com'
+permalink             : '/:title'
+include               : ['_pages']
+plugins               : []
 
-disqus_shortname: sercangezer # leave empty if you don't want comments
-google_analytics: false #if set to "true" modify the google_analytycs.html, set to false otherwise
+sass:
+  style: compressed
 
-# Links settings
-links:
-  - name:         Anasayfa
-    url:          /
-  - name:         Linkedin
-    url:          https://www.linkedin.com/in/sercangezer/
-    external:     true
-#  - name:         Arşiv
-#    url:          /Arsiv
-#    external:     false
-#    external:     false
-#  - name:         GitHub
-#    url:          http://github.com/kuoa
-#    external:     true
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
 
-# Build settings
-markdown: kramdown
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
+# Progressive Web App Settings
+pwa_title             : 'Groveld'
+pwa_themecolor        : '#1e88e5'
+pwa_backgroundcolor   : '#1e88e5'
 
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
+serviceworker         : true
+google_analytics      : ''
+
+# Custom Jekyll Configuration
+title                 : 'Sercan GEZER'
+tagline               : 'Sistem Yöneticisi - PANKOBİRLİK'
+description           : 'Sercan GEZER kişisel bloğu'
+author                : 'Sercan GEZER'
+email                 : 'sercangezer.tr@gmail.com'
+
+#phone                 : '+905465864746'
+#address               : 'De Kamp 8<br>8627SP Gauw<br>Netherlands'
+#legal                 : '<a href="/terms">Terms</a> &bull; <a href="/privacy">Privacy</a>'
