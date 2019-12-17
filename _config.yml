@@ -8,8 +8,6 @@ baseurl: # the sub-path of your site, e.g. /blog/
 disqus_shortname: sercangezer # leave empty if you don't want comments
 google_analytics: false #if set to "true" modify the google_analytycs.html, set to false otherwise
 
-permalink: /:title
-
 # Links settings
 links:
   - name:         Anasayfa
@@ -17,8 +15,8 @@ links:
   - name:         Linkedin
     url:          https://www.linkedin.com/in/sercangezer/
     external:     true
-  - name:         Arşiv
-    url:          /archive
+#  - name:         Arşiv
+#    url:          /Arsiv
 #    external:     false
 #    external:     false
 #  - name:         GitHub

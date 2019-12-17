@@ -1,0 +1,11 @@
+I"S<p>JD Edwards 9.10 sürümünde kullanıcıya atanmış yetkileri(role) <code class="highlighter-rouge">F95921</code> tablosunda tutmaktadır(<em>SY910.F95921</em>).</p>
+
+<p>Aşağıdaki sql kodu yardımıyla belirlediğimiz kullanıcına atadığımız yetkiyi çıktı olarak alabiliriz.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">RLFRROLE</span> <span class="k">FROM</span> <span class="n">SY910</span><span class="p">.</span><span class="n">F95921</span> 
+<span class="k">WHERE</span> <span class="n">RLTOROLE</span><span class="o">=</span><span class="s1">'SGEZER'</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">SGEZER</code> olan kısmı bulmak istediğiniz kullanıcının adı ile değiştirmeniz gerekmektedir.</p>
+
+:ET

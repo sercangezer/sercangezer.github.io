@@ -4,3 +4,5 @@ source 'https://rubygems.org'
 gem 'kramdown'
 gem 'jekyll-watch'
 gem 'rouge'
+
+gem "jekyll", "~> 4.0"

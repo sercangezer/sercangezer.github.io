@@ -1,0 +1,2 @@
+I"h<p>Linux dağıtımlarında genelde sıkıştırmaya çalıştırdığımız klasörün içinde 30.000’den fazla dosya bulunuyorsa <code class="highlighter-rouge">\bin\tar: Argument list too long</code> uyarısı ile karşılaşıyoruz. <code class="highlighter-rouge">Find</code> komutu kullanarak arşivleme işlemini başarıyla gerçekleştiriyoruz.</p>
+:ET
