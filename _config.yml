@@ -3,7 +3,7 @@ locale                : 'tr'
 source                : 'jekyll'
 destination           : 'html'
 url                   : 'http://sercangezer.github.io'
-#enforce_ssl           : 'www.groveld.com'
+enforce_ssl           : 'wsercangezer.github.io'
 permalink             : '/:title'
 include               : ['_pages']
 plugins               : []
