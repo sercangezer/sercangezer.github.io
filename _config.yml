@@ -2,8 +2,8 @@
 locale                : 'tr'
 source                : 'jekyll'
 destination           : 'html'
-url                   : 'http://sercangezer.github.io'
-enforce_ssl           : 'wsercangezer.github.io'
+url                   : 'http://www.sercangezer.com.tr'
+#enforce_ssl           : 'sercangezer.github.io'
 permalink             : '/:title'
 include               : ['_pages']
 plugins               : []
