@@ -1,41 +1,46 @@
-# Core Jekyll Configuration
-locale                : 'tr'
-source                : 'jekyll'
-destination           : 'html'
-url                   : 'http://www.sercangezer.com.tr'
-#enforce_ssl           : 'sercangezer.github.io'
-permalink             : '/:title'
-include               : ['_pages']
-plugins               : []
+title: dash
+author: GitHub User
+email: miguel-gonzalez@gmx.de
+description: > # this means to ignore newlines until "show_exerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+show_excerpts: false # set to true to show excerpts on the homepage
 
-sass:
-  style: compressed
+paginate: 1
+paginate_path: "/blog/page:num/"
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: []
-  ignore:
-    envs: []
-  blanklines: false
-  profile: false
-  startings: []
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
 
-# Progressive Web App Settings
-pwa_title             : 'Groveld'
-pwa_themecolor        : '#1e88e5'
-pwa_backgroundcolor   : '#1e88e5'
+# jekyll-dash date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+dash:
+  date_format: "%b %-d, %Y"
 
-serviceworker         : true
-google_analytics      : ''
+  disqus:
+    shortname: bitbrain-github-io
 
-# Custom Jekyll Configuration
-title                 : 'Sercan GEZER'
-tagline               : 'Sistem Yöneticisi - PANKOBİRLİK'
-description           : 'Sercan GEZER kişisel bloğu'
-author                : 'Sercan GEZER'
-email                 : 'sercangezer.tr@gmail.com'
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://twitter.com/bitbrain_
+      icon: twitter-square
+      color: cyan
+    - url: https://bitbrain.itch.io
+      icon: itch-io
+      color: red
+    - url: https://github.com/bitbrain
+      icon: github-square
+      color: purple
 
-#phone                 : '+905465864746'
-#address               : 'De Kamp 8<br>8627SP Gauw<br>Netherlands'
-#legal                 : '<a href="/terms">Terms</a> &bull; <a href="/privacy">Privacy</a>'
+# Build settings
+theme: jekyll-dash
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
+ - liquid-md5
+ - jekyll/tagging

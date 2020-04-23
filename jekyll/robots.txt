@@ -1,7 +1,0 @@
----
-permalink: /robots.txt
----
-
-User-agent: *
-Disallow: {{ "/img/" | relative_url }}
-Sitemap: {{ "/sitemap.xml" | absolute_url }}
