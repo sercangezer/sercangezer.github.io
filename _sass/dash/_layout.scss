@@ -200,6 +200,10 @@
    & > .post-link {
      font-size: $base-font-size;
      font-size: $post-link-font-size;
+     color: $color-cyan;
+     @include themed() {
+      background-color: t('background-color');
+    }
    }
 
    & > .post-meta {
