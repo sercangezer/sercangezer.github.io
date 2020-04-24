@@ -28,7 +28,7 @@ dash:
       color: cyan
 
 # Build settings
-theme: jekyll-dash
+#theme: jekyll-dash
 
 plugins:
  - jekyll-feed
