@@ -23,12 +23,9 @@ dash:
   # generate social links in footer
   # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
   social_links:
-    - url: https://twitter.com/sercangezer_TR
-      icon: twitter-square
+    - url: https://www.linkedin.com/in/sercangezer/
+      icon: linkedin
       color: cyan
-    - url: https://github.com/sercangezer
-      icon: github-square
-      color: purple
 
 # Build settings
 theme: jekyll-dash
