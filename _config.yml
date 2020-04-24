@@ -1,13 +1,11 @@
-title: dash
-author: GitHub User
-email: miguel-gonzalez@gmx.de
+title: Sercan GEZER | Sistem Uzmanı @ PANKOBİRLİK
+author: Sercan GEZER
+email: sercangezer.tr@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Linux sistem yönetimi üzerine uzmanlaşmak isteyip JD Edwards EnterpriseOne ve Weblogic ile boğuşan bir şahıs
 show_excerpts: false # set to true to show excerpts on the homepage
 
-paginate: 3
+paginate: 10
 paginate_path: "/sayfa-:num/"
 
 tag_permalink_style: pretty
@@ -20,7 +18,7 @@ dash:
   date_format: "%b %-d, %Y"
 
   disqus:
-    shortname: bitbrain-github-io
+    shortname: sercangezer
 
   # generate social links in footer
   # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple

@@ -11,7 +11,7 @@ layout: default
       {% endfor %}
   </div>
   {% endif %}
-  <div class="post-date">Published on {{ page.date | date_to_string }}</div>
+  <div class="post-date">{{ page.date | date_to_string }} yayımlandı.</div>
   {% if page.description != null %}
   <div class="post-description">{{ page.description }}</div>
   {% endif %}
@@ -27,9 +27,9 @@ layout: default
 {% assign size = site.related_posts | size %}
 {% if size != 0 %}
 <div class="related">
-  <h2>related posts</h2>
+  <h2>benzer içerikler</h2>
   <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
+    {% for post in site.related_posts limit:5 %}
       <li>
         <h3>
           <a href="{{ post.url }}">
