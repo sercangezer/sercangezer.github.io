@@ -30,4 +30,4 @@ dism /online /get-targetedition
 dism /online /Set-Edition:ServerDataCenter /ProductKey:XXXX-XXXX-XXXX-XXXX-XXXX /AcceptEula
 ```
 
-* `XXXX-XXXX-XXXX-XXXX-XXXX` belirtilen kısma kendi ürün anahtarımızı girerek komutu çalıştırıyoruz. Tamamlandığında `Y` diyerek sistemimiz yeniden başlıyor. Açıldığında artık full sürüm olarak devam ediyoruz.
+* `XXXX-XXXX-XXXX-XXXX-XXXX` belirtilen kısma kendi ürün anahtarımızı girerek komutu çalıştırıyoruz. Tamamlandığında `Y` diyerek sistemimiz yeniden başlıyor. Açıldığında artık full sürüm olarak devam ediyoruz.([Kaynak](https://blog.citrix24.com/upgrade-windows-2012-r2-evaluation-full-version/))
