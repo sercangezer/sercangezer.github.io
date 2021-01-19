@@ -1,39 +1,63 @@
-title: Sercan GEZER
-author: Sercan GEZER
-email: sercangezer.tr@gmail.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  Linux sistem yönetimi üzerine uzmanlaşmak isteyip JD Edwards EnterpriseOne ve Weblogic ile boğuşan bir şahıs
-show_excerpts: false # set to true to show excerpts on the homepage
+# Site settings
+title_left    : "Sercan GEZER"
+title_right   : "   #Linux" # default: ""
+description   : "Linux terminale dair bir şeyler."
+keywords      : "linux, bash, ubuntu, debian, unix, terminal, shell, xterm, command line, script"
+url           : https://sercangezer.github.io # site url
+baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover         : "" # image uri like logo/cover image for site seo
 
-paginate: 10
-paginate_path: "/sayfa-:num/"
-
-tag_permalink_style: pretty
-tag_page_layout: tag_page
-tag_page_dir: tag
-
-# jekyll-dash date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-dash:
-  date_format: "%b %-d, %Y"
-
-  disqus:
-    shortname: sercangezer
-
-  # generate social links in footer
-  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
-  social_links:
-    - url: https://www.linkedin.com/in/sercangezer/
-      icon: linkedin
-      color: cyan
+google_analytics  : G-JV6L09S1HJ
+twitter_username  : ""
+comments_enabled  : true # if enabled (set to true), please provide your disqus_username
+disqus_shortname  : "karaekranlinux"
+postshare_enabled : true
 
 # Build settings
-#theme: "jekyll-dash"
-remote_theme: bitbrain/jekyll-dash
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source      : ./
+destination : ./_site
+
+# Sass configuration
+sass:
+  sass_dir  : assets/scss
+  style     : compressed # expanded
+
+# Author settings
+author:
+  name     : "Sercan GEZER"
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
- - jekyll-paginate
- - liquid-md5
- - jekyll/tagging
+  - jekyll-sitemap
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: Hakkımda
+  - slug : blog
+    title: Blog
+
+exclude:
+  - "gulp"
+  - "node_modules"
+  - "bower"
+  - "bower_components"
+  - "config.rb"
+  - "src"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - ".rvmrc"
+  - ".rbenv-version"
+  - "package.json"
+  - "gulpfile.js"
+  - "README.md"
+  - "Rakefile"
+  - "changelog.md"
+  - "script"
+  - "vendor"
+  - "thinkspace.gemspec"

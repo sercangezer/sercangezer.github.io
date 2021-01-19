@@ -1,24 +1,16 @@
+---
+layout: compress
+published: true
+---
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "tr" }}">
-
-  {%- include head.html -%}
-
+<html>
+  {% include head.html %}
   <body>
-
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main class="wrapper">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
     </main>
-
-    {%- include footer.html -%}
-    <script>
-      window.FontAwesomeConfig = {
-        searchPseudoElements: true
-      }
-    </script>
+    {% include foot.html %}
   </body>
-
 </html>

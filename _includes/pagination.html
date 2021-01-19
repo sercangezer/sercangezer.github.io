@@ -1,26 +1,21 @@
-<!-- pagination -->
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fas fa-chevron-left"></i></a>
-  {% else %}
-    <span><i class="fas fa-chevron-left"></i></span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="webjeda">{{ page }}</span>
-    {% elsif page == 1 %}
-      <a href="/">{{ page }}</a>
+<nav class="pagination" role="pagination">
+  <ul>
+    {% assign url = site.baseurl | append: "/" %}
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page > 1 %}
+        {% assign prev = 'page/' | append: paginator.previous_page %}
+      {% endif %}
+      <li><a class="prev" href="{{ url | append: prev }}" title="Articles new">&laquo; Prev</a></li>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <li><span class="prev disabled">&laquo; Prev</span></li>
     {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fas fa-chevron-right"></i></a>
-  {% else %}
-    <span><i class="fas fa-chevron-right"></i></span>
-  {% endif %}
-</div>
+    <li><span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span></li>
+    {% if paginator.next_page %}
+      <li><a class="next" href="{{ url | append: 'page/' | append: paginator.next_page }}" title="Articles old">Next &raquo;</a></li>
+    {% else %}
+      <li><span class="next disabled">Next &raquo;</span></li>
+    {% endif %}
+  </ul>
+</nav>
 {% endif %}

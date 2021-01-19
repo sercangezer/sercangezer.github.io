@@ -1,0 +1,72 @@
+I"�<p>Esenlikler,</p>
+
+<p>Linux ortamında bir dosya kopyaladığımız zaman; hedef klasörde aktif kullanıcıya ait <strong>izinler (mode, permissions), sahiplik (ownership)</strong> ve <strong>tarih damgası(timestamp)</strong> bilgilerini kullanarak dosyayı oluşturur.</p>
+
+<h4 id="örnek">Örnek:</h4>
+<p>Aşağıdaki <code class="highlighter-rouge">linux</code> kullanıcısına ait <code class="highlighter-rouge">örnek02.txt</code> dosyası mevcuttur.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span>ll
+<span class="nt">-rwxrwxrwx</span><span class="nb">.</span> 1 linux  linux  0 Dec 15 13:23 ornek02.txt
+</code></pre></div></div>
+<p><code class="highlighter-rouge">ornek02.txt</code> dosyasını <code class="highlighter-rouge">oracle</code> kullanıcısı ile parametresiz olarak <code class="highlighter-rouge">kopya02.txt</code> olarak kopyalıyoruz.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span><span class="nb">cp </span>ornek02.txt kopya02.txt
+<span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span>ll <span class="c">#dosya listeleme</span>
+<span class="nt">-rwxrwxr-x</span><span class="nb">.</span> 1 oracle oracle 0 Dec 15 13:48 kopya02.txt
+<span class="nt">-rwxrwxrwx</span><span class="nb">.</span> 1 linux  linux  0 Dec 15 13:23 ornek02.txt
+</code></pre></div></div>
+<p>Görüldüğü gibi <code class="highlighter-rouge">kopya02.txt</code> dosyasının sahibi <strong>oracle</strong>, izinleri <strong>-rwxrwxr-x</strong>  ve tarih damgası değişti.</p>
+
+<div class="divider"></div>
+
+<p>Bunun önüne geçebilmek için; <strong><code class="highlighter-rouge">cp --preserve</code></strong> ile birlikte kullanıyoruz.</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">cp --preserve</code> komutunu kullanabilmemiz aktif kullanıcımızda  <strong>root</strong> yetkisi olması gerekmektedir.</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">--preserve</span><span class="o">[=</span>mode, ownership, timestamp]
+<span class="c"># varsayılan olarak mode,ownership,timestamp argümanlarını alıyor.</span>
+</code></pre></div></div>
+<h4 id="kullanımı">Kullanımı:</h4>
+
+<p>İlk hali;</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>oracle@sercangezer-ol7]<span class="nv">$ </span>ll
+<span class="nt">-rwxrwxrwx</span><span class="nb">.</span> 1 linux linux 0 Dec 15 13:23 ornek02.txt
+</code></pre></div></div>
+
+<p>izinlerini koruyarak (<em>–preserve=mode</em>);</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span><span class="nb">sudo cp</span> <span class="nt">--preserve</span><span class="o">=</span>mode ornek02.txt ornek02_mode.txt
+<span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span>ll
+<span class="nt">-rwxrwxrwx</span><span class="nb">.</span> 1 root  root  0 Dec 15 14:47 ornek02_mode.txt
+<span class="nt">-rwxrwxrwx</span><span class="nb">.</span> 1 linux linux 0 Dec 15 13:23 ornek02.txt
+</code></pre></div></div>
+
+<p>sahipliğini koruyarak (<em>–preserve=ownership</em>);</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span><span class="nb">sudo cp</span> <span class="nt">--preserve</span><span class="o">=</span>ownership ornek02.txt ornek02_ownership.txt
+<span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span>ll
+<span class="nt">-rwxrwxrwx</span><span class="nb">.</span> 1 linux linux 0 Dec 15 14:49 ornek02_ownership.txt
+<span class="nt">-rwxrwxrwx</span><span class="nb">.</span> 1 linux linux 0 Dec 15 13:23 ornek02.txt
+</code></pre></div></div>
+
+<p>tarih damgasını korayarak (<em>–preserve=timestamp</em>);</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span><span class="nb">sudo cp</span> <span class="nt">--preserve</span><span class="o">=</span>timestamp ornek02.txt ornek02_mode.txt
+<span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span>ll
+<span class="nt">-rwxr-xr-x</span><span class="nb">.</span> 1 root  root  0 Dec 15 13:23 ornek02_timestamp.txt
+<span class="nt">-rwxrwxrwx</span><span class="nb">.</span> 1 linux linux 0 Dec 15 13:23 ornek02.txt
+
+</code></pre></div></div>
+
+<p>dilerseniz birden fazla argümanda girebiliyoruz. Tarih damgasını ve kullanıcısını koruyarak kopyalayalım. (<em>–preserve=ownership,timestamp</em>)</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span><span class="nb">sudo cp</span> <span class="nt">--preserve</span><span class="o">=</span>ownership,timestamp ornek02.txt ornek02_timestamp_ownership.txt
+<span class="o">[</span>oracle@sercangezer-ol7 <span class="o">]</span><span class="nv">$ </span>ll
+<span class="nt">-rwxrwxrwx</span><span class="nb">.</span> 1 linux linux 0 Dec 15 13:23 ornek02_timestamp_ownership.txt
+<span class="nt">-rwxrwxrwx</span><span class="nb">.</span> 1 linux linux 0 Dec 15 13:23 ornek02.txt
+</code></pre></div></div>
+
+<!--
+<div class="video-container"><iframe src="#" frameborder="0" allowfullscreen></iframe>
+</div>
+-->
+
+<p>Saygılarımla,<br />
+Sağlıklı günler dilerim.</p>
+:ET

@@ -1,1 +1,1 @@
-Sercan GEZER
+Kara Ekran #Linux

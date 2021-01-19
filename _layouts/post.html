@@ -1,44 +1,16 @@
 ---
 layout: default
 ---
-{% include author.html %}
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  {% if site.plugins contains "jekyll/tagging" %}
-  <div class="post-tags">
-      {% for tag in page.tags %}
-      <a class="tag" href="/tag/{{ tag }}/">{{ tag }}</a>
-      {% endfor %}
+
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+    {% include post-share.html %}
   </div>
-  {% endif %}
-  <div class="post-date">{{ page.date | date_to_string }} yayımlandı.</div>
-  {% if page.description != null %}
-  <div class="post-description">{{ page.description }}</div>
-  {% endif %}
-  {{ content }}
-</div>
+</article>
 
-{% if site.dash.disqus.shortname %}
-<div class="comments">
-{% include disqus.html %}
-</div>
-{% endif %}
-
-{% assign size = site.related_posts | size %}
-{% if size != 0 %}
-<div class="related">
-  <h2>benzer içerikler</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:5 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
-{% include tagcloud.html %}
+{% include comments.html %}
