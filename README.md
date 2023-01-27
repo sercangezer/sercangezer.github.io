@@ -1,2 +1,3 @@
 # sercangezer.github.io
-Personel Blog
+
+Linux ve Kubernetes etrafında dolaşan yazılar
