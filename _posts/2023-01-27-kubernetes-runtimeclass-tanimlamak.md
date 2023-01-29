@@ -70,7 +70,7 @@ handler: kata
 
 ## Pod'a runtimeClass eklemek
 
-Herhangi bir pod'umuza `spec.runtimeClassName` özelliğini ekleyerek, izole ediyoruz.
+Herhangi bir pod'umuza `spec.runtimeClassName` özelliğini ekleyerek, izole ediyoruz. `gVisor` runtime 'ını ele alırsak;
 
 ```yaml
 apiVersion: v1
