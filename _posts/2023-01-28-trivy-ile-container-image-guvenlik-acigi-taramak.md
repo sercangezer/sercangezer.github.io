@@ -8,10 +8,7 @@ tags: [CKS,trivy,kubernetes,pod,container,imaj,CVE,güvenlik açığı]
 comments: false
 ---
 
-<figure>
-	<a href="http://sercangezer.github.io/images/2023/trivy-ile-container-image-guvenlik-acigi-taramak-01.png"><img src="http://sercangezer.github.io/images/2023/trivy-ile-container-image-guvenlik-acigi-taramak-01.png" /></a>
-	<figcaption><a href="http://sercangezer.github.io/images/2023/trivy-ile-container-image-guvenlik-acigi-taramak-01.png" title="Trivy - Kubernetes Container Güvenlik Açığı Tarayıcısı">Trivy - Kubernetes Container Güvenlik Açığı Tarayıcısı</a></figcaption>
-</figure>
+![](https://raw.githubusercontent.com/sercangezer/sercangezer.github.io/main/images/2023/trivy-ile-container-image-guvenlik-acigi-taramak-01.png)
 
 `Trivy`: Kapsamlı ve çok yönlü bir güvenlik açığı tarayıcısıdır. Certified Kubernetes Security (CKS) sınavında `v0.19` versionu kullanılıp sadece `imaj güvenlik taraması` gerçekleştirmemiz yeterli.
 
