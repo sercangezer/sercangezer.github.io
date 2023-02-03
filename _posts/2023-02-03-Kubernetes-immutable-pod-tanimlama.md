@@ -44,6 +44,8 @@ container.securityContext.readOnlyRootFilesystem: true
 ```
   * ❗❗ Eğer `container.securityContext.readOnlyRootFilesystem: true` olarak uygularsak yazılımın kullanacağı cache, log gibi geçici olarak kullanacağı klasörleri empytDir olarak bağlamamız gerekir.
 
+🔥  [_Kubernetes resmi dökümantasyondan okuyabilirsiniz_](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#security-context-1)
+
 # Uygulama
 
 * Aşağıdaki yaml da bulunan örnek podumuzu immutable hale çevirelim.
