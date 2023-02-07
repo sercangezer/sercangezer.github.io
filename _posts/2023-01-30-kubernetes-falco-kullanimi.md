@@ -57,7 +57,7 @@ systemctl status falco
 
 * Örnek bir pod oluşturalım.
 
-```bash
+```yaml
 cat << EOF | kubectl apply -f -
 apiVersion: v1
 kind: Pod

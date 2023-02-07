@@ -45,7 +45,7 @@ Version: 0.19.2
 
 Öncelikle örnek deployment 'ımızı çalıştıralım.
 
-```bash
+```yaml
 cat << EOF | kubectl apply -f -
 apiVersion: apps/v1
 kind: Deployment

@@ -3,15 +3,15 @@ main:
   - title: "cd /root"
     url: https://sercangezer.github.io/
 
+  - title: "Bütün Yazılar"
+    url: /categories/
+
   - title: "Hakkımda"
     url: https://www.linkedin.com/in/sercangezer/
 
 
   # - title: "Projects"
-  #   url: /projects/
-
-  - title: "Bütün Yazılar"
-    url: /categories/
+  #   url: /projects/  
 
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
