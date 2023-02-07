@@ -101,32 +101,26 @@ author:
   name: "Sercan GEZER" # 블로그 닉네임
   avatar: "/assets/images/sercangezer-pp.jpg" # 블로그 프로필 사진
   #   bio              : "hi all!"
-  location         : "Ankara, Türkiye"
-  email            : "sercan.gezer.tr@gmail.com"
+  #location         : "Ankara, Türkiye"
+  #email            : "sercan.gezer.tr@gmail.com"
 
   links: # 사이트 링크
-      - label: "Email"
+      - label: "ePosta"
         icon: "fas fa-fw fa-envelope-square"
-#       # url: "mailto:your.name@email.com"
-#     - label: "Website"
-#       icon: "fas fa-fw fa-link"
-#       # url: "https://your-website.com"
-#     - label: "Twitter"
-#       icon: "fab fa-fw fa-twitter-square"
-#       # url: "https://twitter.com/"
-#     - label: "Facebook"
-#       icon: "fab fa-fw fa-facebook-square"
-#       # url: "https://facebook.com/"
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://www.instagram.com/"
+        url: "mailto:sercan.gezer.tr@gmail.com"
+      - label: "LinkedIn"
+        icon: fab fa-fw fa-linkedin
+        url: https://www.linkedin.com/in/sercangezer/
 
 # Site Footer
 footer:
   links:
+    - label: "LinkedIn"
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/sercangezer/
+    - label: "Youtube"
+      icon: fab fa-fw fa-youtube
+      #url: 
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
@@ -145,6 +139,7 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+    
 
 # Reading Files
 include:
