@@ -1,10 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+gemspec
 
-gem 'jekyll'
-gem 'kramdown'
-gem 'coderay'
-gem 'rake'
-gem 'thor'
-gem 'activesupport'
-gem 'stringex'
-gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
+gem 'jekyll-admin', group: :jekyll_plugins
+gem 'jekyll-sitemap'

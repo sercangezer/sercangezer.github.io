@@ -1,12 +1,21 @@
 ---
-published: true
-layout: post
 title: (CKS) Dockerfile analizi
-description: Dockerfile analizi ile güvenlik açıklarını kapatmak
+excerpt: Dockerfile analizi ile güvenlik açıklarını kapatmak
+
 date: 2023-02-03
-tags: [CKS,dockerfile,container,image]
-comments: false
+last_modified_at: 2023-02-03
+
+categories:
+  - Kubernetes
+  - Certified-Kubernetes-Security-(CKS)
+tags: 
+  - [CKS,dockerfile,container,image]
+
+toc: true
+toc_sticky: true
 ---
+
+
 
 Esenlikler,
 

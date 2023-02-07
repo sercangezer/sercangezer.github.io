@@ -1,11 +1,18 @@
 ---
-published: true
-layout: post
 title: (CKS) Falco ile konteynır davranışlarını izlemek
-description: Kubernetes ortamında çalışan konteynırların Falco ile davranışlarını izlemek
+excerpt: Kubernetes ortamında çalışan konteynırların Falco ile davranışlarını izlemek
+
 date: 2023-01-30
-tags: [CKS,falco,kubernetes,container,Analyzing Container Behavior with Falco]
-comments: false
+last_modified_at: 2023-01-30
+
+categories:
+  - Kubernetes
+  - Certified-Kubernetes-Security-(CKS)
+tags: 
+  - [CKS,falco,kubernetes,container,Analyzing Container Behavior with Falco]
+
+toc: true
+toc_sticky: true
 ---
 
 ![](https://raw.githubusercontent.com/sercangezer/sercangezer.github.io/main/images/2023/20230130-kubernetes-falco-kullanimi-01.PNG)

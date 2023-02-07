@@ -1,12 +1,20 @@
 ---
-published: true
-layout: post
 title: (CKS) RuntimeClass atamak
-description: Pod'a RuntimeClass atamak
+excerpt: Kubernetes ortamda Pod'a RuntimeClass atamak
+
 date: 2023-01-27
-tags: [CKS, kubernetes, pod, container, runtimeclass, gvisor, runsc, runc]
-comments: false
+last_modified_at: 2023-01-27
+
+categories:
+  - Kubernetes
+  - Certified-Kubernetes-Security-(CKS)
+tags: 
+  - [CKS, kubernetes, pod, container, runtimeclass, gvisor, runsc, runc]
+
+toc: true
+toc_sticky: true
 ---
+
 
 Esenlikler,
 

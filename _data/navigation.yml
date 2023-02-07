@@ -1,0 +1,22 @@
+# main links
+main:
+  - title: "cd /root"
+    url: https://sercangezer.github.io/
+
+  - title: "Hakkımda"
+    url: https://www.linkedin.com/in/sercangezer/
+
+
+  # - title: "Projects"
+  #   url: /projects/
+
+  - title: "Bütün Yazılar"
+    url: /categories/
+
+# sidebar navigation (categories)
+# 2022.02.15 sidebar update : simple ver.
+categories:
+  - title: "Linux"
+    url: /categories/
+  - title: "Kubernetes"
+    url: /categories/Kubernetes/

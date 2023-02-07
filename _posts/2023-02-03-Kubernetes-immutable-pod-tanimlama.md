@@ -1,11 +1,18 @@
 ---
-published: true
-layout: post
 title: (CKS) Immutable Pod tanımlama
-description: Kubernetes ortamda Immutable (Değişmez/Sabit) Pod tanımlama
+excerpt: Kubernetes ortamda Immutable (Değişmez/Sabit) Pod tanımlama
+
 date: 2023-02-03
-tags: [CKS,immutable,immutable pod,immutable container,container security context,privileged,allowPrivilegeEscalation,readOnlyRootFilesystem]
-comments: false
+last_modified_at: 2023-02-03
+
+categories:
+  - Kubernetes
+  - Certified-Kubernetes-Security-(CKS)
+tags: 
+  - [CKS,immutable,immutable pod,immutable container,container security context,privileged,allowPrivilegeEscalation,readOnlyRootFilesystem]
+
+toc: true
+toc_sticky: true
 ---
 
 Esenlikler,

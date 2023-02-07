@@ -1,11 +1,18 @@
 ---
-published: true
-layout: post
 title: (CKS) Kubernetes Auditing Mekanizması
-description: Kubernetes ortamında Auditing Logging mekanizması ile kubernetes güvenliğinin sağlanması 
+excerpt: Kubernetes ortamında Auditing Logging mekanizması ile kubernetes güvenliğinin sağlanması 
+
 date: 2023-01-31
-tags: [CKS,auditing,logging,kubernetes]
-comments: false
+last_modified_at: 2023-01-31
+
+categories:
+  - Kubernetes
+  - Certified-Kubernetes-Security-(CKS)
+tags: 
+  - [CKS,auditing,logging,kubernetes]
+
+toc: true
+toc_sticky: true
 ---
 
 Esenlikler,
