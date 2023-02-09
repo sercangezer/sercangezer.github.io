@@ -1,0 +1,1 @@
+<p ><strong><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github üzerinde düzenlemek istersen --> </strong> <a href="https://github.com/sercangezer/sercangezer.github.io/blob/main/{{ page.relative_path }}">Link</a></p>
