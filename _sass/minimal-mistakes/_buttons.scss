@@ -41,7 +41,8 @@
   (facebook, $facebook-color),
   (twitter, $twitter-color),
   (linkedin, $linkedin-color),
-  (whatsapp, $whatsapp-color);
+  (whatsapp, $whatsapp-color),
+  (email, $rss-color);
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
