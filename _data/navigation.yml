@@ -17,6 +17,8 @@ main:
 # 2022.02.15 sidebar update : simple ver.
 categories:
   - title: "Linux"
-    url: /categories/
+    url: /categories/Linux
   - title: "Kubernetes"
     url: /categories/Kubernetes/
+  - title: "DevOps"
+    url: /categories/DevOps
