@@ -24,6 +24,10 @@ layout: null
         {% for cat in post.categories %}
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
+		<author>
+		  <name>{{ site.author.name }}</name>
+		  <email>{{ site.author.email }}</email>
+    </author>
       </item>
     {% endfor %}
   </channel>
