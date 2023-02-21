@@ -56,7 +56,7 @@ reCaptcha:
 atom_feed:
   path: # blank (default) uses feed.xml
   hide: # true, false (default)
-search: # true, false (default)
+search:  true #, false (default)
 search_full_content: # true, false (default)
 search_provider: # google
 algolia:
@@ -107,7 +107,7 @@ author:
   links: # 사이트 링크
       - label: "ePosta"
         icon: "fas fa-fw fa-envelope-square"
-        url: "mailto:sercan.gezer.tr@gmail.com"
+        #url: "mailto:sercan.gezer.tr@gmail.com"
       - label: "LinkedIn"
         icon: fab fa-fw fa-linkedin
         url: https://www.linkedin.com/in/sercangezer/
