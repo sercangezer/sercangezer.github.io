@@ -40,7 +40,7 @@ html[data-theme="light"] {
 	--light-text-color: rgb(89, 183, 255);
 	--medium-text-color: #555;
 	--main-text-color: #333;
-	--highlight-text-color: #6cb4a0;
+	--highlight-text-color: #24a2e6;
 	--dark-text-color: #393e46;
 	--link-color: #24a2e6;
 	--code-bg-color: rgb(245, 245, 245);
@@ -104,7 +104,7 @@ html[data-theme="dark"] {
 	--light-text-color: #c4bbf0;
 	--medium-text-color: #52057b;
 	--main-text-color: #EAEAEA;
-	--highlight-text-color: #6cb4a0;
+	--highlight-text-color: #24a2e6;
 	--dark-text-color: rgb(36, 38, 42);
 	--link-color: #24a2e6;
 	--code-bg-color: rgb(36, 38, 42);
@@ -187,8 +187,9 @@ pre {
 }
 
 code {
-	font-family: var(--source-code-font), monospace;
+	font-family: var(--text-font), monospace;
 	margin: unset;
+  font-weight: 600;
 	padding: 0.1rem;
 	color: var(--highlight-text-color);
 }
@@ -442,7 +443,7 @@ figcaption {
 }
 
 ::selection {
-background-color: #fffba0;
+background-color: #a0ecf7;
 color: #333;
 }
 
