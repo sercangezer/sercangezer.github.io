@@ -1,20 +1,12 @@
 ---
+layout: post
 title: (CKS) Kubelet ve Kube-apiserver TLS Version ve Cipher atama
-excerpt: Kubernetes Kube-apiserver ve Kubelet için minimum TLS version ve Cipher atama
-
-date: 2023-02-01
-last_modified_at: 2023-02-01
-
-categories:
-  - Kubernetes
-  - Certified-Kubernetes-Security-(CKS)
+description: Kubernetes Kube-apiserver ve Kubelet için minimum TLS version ve Cipher atama
+summary: Kubernetes Kube-apiserver ve Kubelet için minimum TLS version ve Cipher atama
 tags: 
-  - [CKS,minTtlsMinVersion,tlsCipherSuites,tls-cipher-suites,tls-min-version,kubelet,kube-apiserver]
-
-toc: true
-toc_sticky: true
+  - [CKS,minTtlsMinVersion,tlsCipherSuites,tls-cipher-suites,tls-min-version,kubelet,kube-apiserver,Kubernetes]
+minute: 1
 ---
-
 
 Esenlikler,
 

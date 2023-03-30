@@ -1,18 +1,11 @@
 ---
+layout: post
 title: Failed to load SeLinux policy, Freezing hatası ve çözümü
-excerpt: Redhat based dağıtımlarda Failed to load SeLinux policy, Freezing hatası ve çözümü
-
-date: 2023-02-08
-last_modified_at: 2023-02-08
-
-categories:
-  - Linux
-  - Linux Sorun Giderme (Troubleshooting)
+description: Redhat based dağıtımlarda Failed to load SeLinux policy, Freezing hatası ve çözümü
+summary: Redhat based dağıtımlarda Failed to load SeLinux policy, Freezing hatası ve çözümü
 tags: 
   - [Linux,Redhat based,SELinux,Policy,Freezing,Kernel,Centos 7,SELinux disable]
-
-toc: true
-toc_sticky: true
+minute: 1
 ---
 
 Esenlikler,

@@ -1,19 +1,16 @@
 ---
+layout: post
 title: Ubuntu 22.04 Jenkins kurulum
-excerpt: Ubuntu 22.04 ortamında Jenkins servis olarak kurulumu
-
-date: 2023-02-13
-last_modified_at: 2023-02-13
-
-categories:
-  - DevOps
+description: Ubuntu 22.04 ortamında Jenkins servis olarak kurulumu
+summary: Ubuntu 22.04 ortamında Jenkins servis olarak kurulumu
 tags: 
-  - [DevOps,Jenkins,CI/CD,Continious Integration, Continious Delevery]
-
-toc: true
-toc_sticky: true
+  - DevOps
+  - Jenkins
+  - CI/CD
+  - Continious Integration
+  - Continious Delivery
+minute: 1
 ---
-
 
 Esenlikler,
 

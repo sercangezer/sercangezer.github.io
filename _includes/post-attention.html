@@ -1,0 +1,33 @@
+<style>
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: lightblue; /* Red */
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+</style>
+<div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    Yazılan içerik ile ilgili her türlü soru, şikayet ve öneriniz için <a href="mailto:sercan.gezer.tr@gmail.com?subject={{ page.title }}&amp;body={{ page.description }} --> {{ page.url | absolute_url | url_encode }}" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} eMail"><i class=" fa fa-envelope" aria-hidden="true"></i><span> ePosta gönderebilirsiniz.</span></a>
+  </div>

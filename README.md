@@ -1,3 +1,3 @@
-# sercangezer.github.io
+# LinuxTÜRKİYE.tech
 
-Linux ve Kubernetes etrafında dolaşan yazılar
+LinuxTÜRKİYE topluluğuna küçük bir katkı amacıyla oluşturulmuş bir blog.

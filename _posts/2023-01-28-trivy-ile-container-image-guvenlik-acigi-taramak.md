@@ -1,19 +1,13 @@
 ---
+layout: post
 title: (CKS) Trivy, container imaj güvenlik açığı taramak
-excerpt: Kubernetes ortamında kullanılan imajların güvenlik açıklarını kontrol etmek
-
-date: 2023-01-27
-last_modified_at: 2023-01-27
-
-categories:
-  - Kubernetes
-  - Certified-Kubernetes-Security-(CKS)
+description: Kubernetes ortamında kullanılan imajların güvenlik açıklarını kontrol etmek
+summary: Kubernetes ortamında kullanılan imajların güvenlik açıklarını kontrol etmek
 tags: 
-  - [CKS,trivy,kubernetes,pod,container,imaj,CVE,güvenlik açığı]
-
-toc: true
-toc_sticky: true
+  - [CKS,trivy,Kubernetes,pod,container,imaj,CVE,güvenlik açığı]
+minute: 1
 ---
+
 
 ![](https://raw.githubusercontent.com/sercangezer/sercangezer.github.io/main/images/2023/trivy-ile-container-image-guvenlik-acigi-taramak-01.png)
 

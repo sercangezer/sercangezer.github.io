@@ -1,19 +1,12 @@
 ---
+layout: post
 title: Çalışan Podların CPU/Memory Request ve Limit bilgilerini görmek
-excerpt: Kubernetes ortamda çalışan Pod ve container ların CPU/Memory Request ve Limit bilgilerini ekrana yazdırmak
-
-date: 2023-02-09
-last_modified_at: 2023-02-09
-
-categories:
-  - Kubernetes
+description: Kubernetes ortamda çalışan Pod ve container ların CPU/Memory Request ve Limit bilgilerini ekrana yazdırmak
+summary: Kubernetes ortamda çalışan Pod ve container ların CPU/Memory Request ve Limit bilgilerini ekrana yazdırmak
 tags: 
   - [Kubernetes,K8s,Pod,Container,CPU Request,Memory Request,CPU Limits,Memory Limits]
-
-toc: true
-toc_sticky: true
+minute: 1
 ---
-
 
 Esenlikler,
 
