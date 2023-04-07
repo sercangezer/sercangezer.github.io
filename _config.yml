@@ -6,7 +6,7 @@ description: >-
 lang: tr-TR
 timezone:  Europe/Istanbul
 repo: https://github.com/sercangezer/sercangezer.github.io # site repo [optional]
-data-theme: "dark" # default theme "dark" | "light"
+data-theme: "light" # default theme "dark" | "light"
 #discus-identifier: powex # replace with your disqus shortname
 
 author:
