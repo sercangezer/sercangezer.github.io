@@ -316,8 +316,27 @@ b {
 }
 
 .post ul {
-	margin: 0px;
-	margin: 0px 0px 10px 10px;
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+.post ul li {
+  margin-bottom: 12px;
+  margin-left: -10px;
+  display: flex;
+  align-items: center;
+}
+
+.post ul li::before {
+  color: transparent;
+  font-size: 1px;
+  content: " ";
+  margin-left: -1.3em;
+  margin-right: 15px;
+  padding: 15px;
+  background-color: black;
+  -webkit-mask-image: url("../assets/linux.svg");
+  -webkit-mask-size: cover;
 }
 
 .post ol {
