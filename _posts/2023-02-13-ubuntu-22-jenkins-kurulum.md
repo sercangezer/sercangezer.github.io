@@ -62,8 +62,7 @@ OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2, mixed mode, sharing)
 ```bash
 curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
-```
-```bash
+
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
@@ -74,6 +73,8 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 ```bash
 sudo apt-get update && sudo apt-get install jenkins -y
 ```
+
+* `Jenkins` servis olarak eklenmiş mi kontrol edelim.
 
 ```bash
 sudo systemctl status jenkins

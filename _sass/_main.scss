@@ -333,7 +333,8 @@ b {
   content: " ";
   margin-left: -1.3em;
   margin-right: 15px;
-  padding: 15px;
+  margin-top: 10px;
+  padding: 10px;
   background-color: black;
   -webkit-mask-image: url("../assets/linux.svg");
   -webkit-mask-size: cover;
@@ -811,5 +812,74 @@ $link-color: var(--link-color);
     box-shadow: 0 0 1px rgba(0,0,0,0.20);
     z-index: 15;
     
+  }
+}
+
+/**
+ * Codeblock.
+ */
+ pre.highlight {
+  padding: 8px 12px;
+  position: relative;
+
+    // copy code to clipboard
+  .copy {
+    color: white;
+    position: absolute;
+    right: 1.2rem;
+    top: 0.5rem;
+    opacity: 0;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: #FFFFFF;
+      border: 1px solid #222222;
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: #222222;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+      outline: none;
+      padding: 5px 10px;
+      position: absolute;
+      text-align: center;
+      text-decoration: none;
+      touch-action: manipulation;
+      transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+      user-select: none;
+      -webkit-user-select: none;
+      width: auto;
+      opacity: 1;
+    }
+  }
+
+  &:active .copy,
+  &:focus .copy,
+  &:hover .copy {
+    background-color: #FFFFFF;
+      border: 1px solid #222222;
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: #222222;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+      outline: none;
+      padding: 5px 10px;
+      position: absolute;
+      text-align: center;
+      text-decoration: none;
+      touch-action: manipulation;
+      transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+      user-select: none;
+      -webkit-user-select: none;
+      width: auto;
+      opacity: 1;
   }
 }
