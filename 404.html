@@ -6,9 +6,18 @@ permalink: 404.html
 <div class="flex-row-between">
 	<a href="{{ site.url }}{{ site.baseurl}}"><i class="fa fa-home" aria-hidden="true"></i> cd /home</a>
 </div>
-<p>
-😕 Maalesef aradığın içerik şuan bulunmuyor. 
 
-</p>
 
+<h1>😕 Maalesef aradığın içerik şuan bulunmuyor. 😕 </h1> 
+
+<hr/>
+
+    <h2>BÜTÜN YAZILAR</h2>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
 
