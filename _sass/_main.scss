@@ -190,8 +190,8 @@ code {
 	font-family: var(--text-font), monospace;
 	margin: unset;
   font-weight: 600;
-	padding: 0.1rem;
-	color: var(--highlight-text-color);
+	padding: 0.3rem;
+	color: red;
 }
 
 pre code {
@@ -209,6 +209,9 @@ pre {
 
 img {
 	max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 hr {
@@ -257,7 +260,7 @@ h1 {
 	text-transform: uppercase;
 	font-size: 2rem;
 	font-weight: bold;
-	margin-bottom: 1.5rem;
+	margin-bottom: 0.5rem;
 }
 
 h2,
@@ -265,7 +268,7 @@ h3,
 h4,
 h5 {
 	font-weight: bold;
-	margin-bottom: 1.5rem;
+	margin-bottom: 0.5rem;
 	font-size: 2rem;
 }
 
