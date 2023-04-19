@@ -25,9 +25,8 @@ Sanallaştırma     :       VirtualBox
 İşletim Sistemi   :       Rocky Linux 9.1
 IP                            :       192.168.1.57
 Hostname           :       raid-1.sercangezer.com
-Disk 1 [20 GB]    :      /dev/sdb
-Disk 2 [20 GB]    :      /dev/sdc
-Disk 3 [20 GB]    :      /dev/sdd
+Disk 1 [5 GB]    :      /dev/sdb
+Disk 2 [5 GB]    :      /dev/sdc
 ```
 
 # Ön Hazırlık
@@ -42,14 +41,13 @@ Disk 3 [20 GB]    :      /dev/sdd
 * Disklerimizde herhangi bir RAID tanımlanması yapılmış mı diye kontrol edelim.
 
 ```bash
-[root@raid-1 ~]# mdadm -E /dev/sd[b-d]
+[root@raid-1 ~]# mdadm -E /dev/sd[b-c]
 ```
 
 ```bash
 # Çıktı
 mdadm: No md superblock detected on /dev/sdb.
 mdadm: No md superblock detected on /dev/sdc.
-mdadm: No md superblock detected on /dev/sdd.
 ```
 
 #  Disklerimizi RAID için bölümlendirme
@@ -80,32 +78,17 @@ fd
 w
 EOF
 ```
-**Hızlıca diskimizi bölümlendirmek için;** (`/dev/sdd`)
-```bash
-[root@raid-1 ~]# fdisk /dev/sdd <<EOF
-n
-p
-1
 
-
-t
-fd
-w
-EOF
-```
 * Disklerimizin bölümlendiğini kontrol etmek için;
 
 ```bash
-[root@raid-1 ~]# mdadm -E /dev/sd[b-d]
+[root@raid-1 ~]# mdadm -E /dev/sd[b-c]
 
 
 /dev/sdb:
    MBR Magic : aa55
 Partition[0] :     41940992 sectors at         2048 (type fd)
 /dev/sdc:
-   MBR Magic : aa55
-Partition[0] :     41940992 sectors at         2048 (type fd)
-/dev/sdd:
    MBR Magic : aa55
 Partition[0] :     41940992 sectors at         2048 (type fd)
 ```
