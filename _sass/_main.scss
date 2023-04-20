@@ -261,6 +261,8 @@ h1 {
 	font-size: 2rem;
 	font-weight: bold;
 	margin-bottom: 0.5rem;
+  border-bottom: 1px dashed #bdbaba;
+  
 }
 
 h2,
@@ -273,23 +275,30 @@ h5 {
 }
 
 h2 {
-	font-size: 1.8rem;
+	font-size: 30px;
+  color:#3498db;
+  border-bottom: 1px dashed #bdbaba;
 }
 
 h3 {
-	font-size: 1.6rem;
+	font-size: 28px;
+  color: #aa4b80;
+  border-bottom: 1px dashed #bdbaba;
 }
 
 h4 {
-	font-size: 1.4rem;
+	font-size: 26px;
+  color: #f15a29
 }
 
 h5 {
-	font-size: 1.2rem;
+	font-size: 24px;
+  color: #52057b;
 }
 
 h6 {
-	font-size: 1rem;
+	font-size: 22px;
+  color: #f15a29;
 }
 
 section h1:first-child {

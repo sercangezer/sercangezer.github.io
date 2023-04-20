@@ -12,13 +12,14 @@ minute: 1
 
 ![](../images/2023/2023-04-14-linux-raid-1-mirror-disk-yapilandirilmasi.jpg)
 
+
 Esenlikler,
 
 Bugün VirtualBox üzerinde oluşturduğumuz Rocky Linux üzerindeki disklerimizi `RAID-1 (Mirroring)` türünde biçimlendireceğiz. 
 
 >RAID ile ilgili Türkçe olarak  [**RAID Nedir? RAID 0 - 1 - 5 - 6 - 10 Tipleri ve Farkları Nelerdir?**](https://kerteriz.net/raid-nedir-raid-tipleri-ve-seviyeleri-nelerdir/) yazısını okumanızı tavsiye ederim.
 
-# Çalışma Ortamı
+## Çalışma Ortamı
 
 ```bash
 Sanallaştırma     :       VirtualBox
@@ -29,7 +30,7 @@ Disk 1 [5 GB]    :      /dev/sdb
 Disk 2 [5 GB]    :      /dev/sdc
 ```
 
-# Ön Hazırlık
+## Ön Hazırlık
 
 * İşlemlerimizi `root` kullanıcısı ile yapıyoruz.
 *  RAID yapımızı yönetmek için `mdadm` yazılımını kullanıyoruz.  Kurulum için;
@@ -50,7 +51,7 @@ mdadm: No md superblock detected on /dev/sdb.
 mdadm: No md superblock detected on /dev/sdc.
 ```
 
-#  Disklerimizi RAID için bölümlendirme
+##  Disklerimizi RAID için bölümlendirme
 **Hızlıca diskimizi bölümlendirmek için;** (`/dev/sdb`)
 ```bash
 [root@raid-1 ~]# fdisk /dev/sdb <<EOF
@@ -93,7 +94,7 @@ Partition[0] :     41940992 sectors at         2048 (type fd)
 Partition[0] :     41940992 sectors at         2048 (type fd)
 ```
 
-# RAID 1 cihazı oluşturma
+## RAID 1 cihazı oluşturma
 * `/dev/sdb1` ve `/dev/sdc1` disk bölümlerini kullanarak `/dev/md0` RAID cihazımızı oluşturalım.
 
 ```bash
@@ -147,7 +148,7 @@ unused devices: <none>
 [root@raid-1 ~]# mdadm --detail /dev/md0
 ```
 
-# RAID cihazında dosya sistemi oluşturma
+## RAID cihazında dosya sistemi oluşturma
 * `/dev/md0` RAID cihazını `ext4` formatında biçimlendiriyoruz.
 
 ```bash
@@ -255,7 +256,7 @@ Consistency Policy : resync
        1       8       33        1      active sync   /dev/sdc1
 ```
 
-# Video
+## Video
 
 <div align="center">
 <iframe width="853" height="505" src="https://www.youtube.com/embed/cwqdlaQSEWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
