@@ -12,6 +12,11 @@ minute: 1
 
 ![](../images/2023/2023-04-14-linux-raid-1-mirror-disk-yapilandirilmasi.jpg)
 
+## Video
+
+<div align="center">
+<iframe width="853" height="505" src="https://www.youtube.com/embed/cwqdlaQSEWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
 
 Esenlikler,
 
@@ -256,7 +261,3 @@ Consistency Policy : resync
        1       8       33        1      active sync   /dev/sdc1
 ```
 
-## Video
-
-<div align="center">
-<iframe width="853" height="505" src="https://www.youtube.com/embed/cwqdlaQSEWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
