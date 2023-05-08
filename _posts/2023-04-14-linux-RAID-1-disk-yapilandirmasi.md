@@ -10,12 +10,13 @@ tags:
 minute: 1
 ---
 
-![](../images/2023/2023-04-14-linux-raid-1-mirror-disk-yapilandirilmasi.jpg)
+<img src="../images/2023/2023-04-14-linux-raid-1-mirror-disk-yapilandirilmasi.jpg" width="75%" height="75%">
+
 
 ## Video
 
 <div align="center">
-<iframe width="853" height="505" src="https://www.youtube.com/embed/cwqdlaQSEWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cwqdlaQSEWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
 
 Esenlikler,

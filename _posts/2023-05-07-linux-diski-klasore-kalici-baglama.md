@@ -11,12 +11,13 @@ tags:
 minute: 1
 ---
 
-![](../images/2023/2023-05-07-linux-diski-klasore-kalici-baglama.png)
+<img src="../images/2023/2023-05-07-linux-diski-klasore-kalici-baglama.png" width="75%" height="75%">
+
 
 ## Video
 
 <div align="center">
-Video kodu kopyala
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1JvNOPDkFFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 Esenlikler,
