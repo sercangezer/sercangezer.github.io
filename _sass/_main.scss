@@ -341,15 +341,11 @@ b {
 }
 
 .post ul li::before {
-  color: transparent;
   font-size: 1px;
   content: " ";
-  margin-left: -1.3em;
-  margin-right: 15px;
-  margin-top: 10px;
   padding: 10px;
   background-color: black;
-  -webkit-mask-image: url("../assets/linux.svg");
+  -webkit-mask-image: url("../assets/linux-tmux.svg");
   -webkit-mask-size: cover;
 }
 
