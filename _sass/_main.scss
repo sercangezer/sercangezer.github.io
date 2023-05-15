@@ -214,6 +214,7 @@ img {
   margin-right: auto;
 }
 
+
 hr {
 	background: var(--light-text-color);
 	height: 1px;
@@ -893,5 +894,11 @@ $link-color: var(--link-color);
       -webkit-user-select: none;
       width: auto;
       opacity: 1;
+  }
+}
+
+@media (max-width:1920px) {
+  img#gizle {
+    display: none;
   }
 }

@@ -11,7 +11,7 @@ tags:
 minute: 1
 ---
 
-<img src="../images/2023/2023-05-07-linux-diski-klasore-kalici-baglama.png" width="75%" height="75%">
+<img id="gizle" src="../images/2023/2023-05-07-linux-diski-klasore-kalici-baglama.png" width="75%" height="75%">
 
 
 ## Video
