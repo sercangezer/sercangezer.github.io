@@ -897,8 +897,14 @@ $link-color: var(--link-color);
   }
 }
 
+
 @media (max-width:1920px) {
   img#gizle {
     display: none;
   }
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
 }
