@@ -1,8 +1,8 @@
-site: Sercan GEZER | Linux Sistem Mühendisi 🇹🇷
-title: Sercan GEZER | Linux Sistem Mühendisi 🇹🇷
+site: Sercan GEZER | Linux/DevOps Sistem Mühendisi 🇹🇷
+title: Sercan GEZER | Linux/DevOps Sistem Mühendisi 🇹🇷
 greetings: Sercan GEZER 🇹🇷
 description: >-
-  LinuxTÜRKİYE topluluğuna küçük bir katkı amacıyla oluşturulmuş bir blog.
+  Türk Bilişim topluluğuna küçük bir katkı amacıyla oluşturulmuş bir blog.
 lang: tr-TR
 timezone:  Europe/Istanbul
 repo: https://github.com/sercangezer/sercangezer.github.io # site repo [optional]
@@ -11,10 +11,10 @@ data-theme: "light" # default theme "dark" | "light"
 
 author:
   name: Sercan GEZER
-  bio: Linux Sistem Mühendisi 
+  bio: Linux/DevOps Sistem Mühendisi 
   userpicture: 
-  username: # general username
-  github: # github username
+  username: Sercan GEZER
+  github: sercangezer
   twitter: # twitter username
   email: sercan.gezer.tr@gmail.com
 
