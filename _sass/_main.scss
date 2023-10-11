@@ -329,24 +329,13 @@ b {
 }
 
 .post ul {
-  list-style-type: none;
-  margin-left: 10px;
+	margin: 0px;
+	margin: 0px 0px 10px 10px;
 }
 
-.post ul li {
-  margin-bottom: 12px;
-  margin-left: -10px;
-  display: flex;
-  align-items: center;
-}
-
-.post ul li::before {
-  font-size: 1px;
-  content: " ";
-  padding: 10px;
-  background-color: black;
-  -webkit-mask-image: url("../assets/linux-tmux.svg");
-  -webkit-mask-size: cover;
+.post ol {
+	margin: 0px;
+	margin: 0px 0px 10px 15px;
 }
 
 .post ol {
@@ -359,6 +348,8 @@ b {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 0.5rem;
+  
+  
 }
 
 .posts li a,
@@ -904,3 +895,4 @@ $link-color: var(--link-color);
   aspect-ratio: 16 / 9;
   width: 100%;
 }
+
