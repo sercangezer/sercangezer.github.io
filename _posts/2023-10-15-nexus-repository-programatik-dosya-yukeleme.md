@@ -5,7 +5,7 @@ description: Shell script içerisinde Nexus Repository dosya upload etme
 summary:  Nexus Repository curl ile dosya yükleme
 tags: 
   - Linux
-  - Nexus OSS Repository
+  - Nexus Repository
 minute: 1
 ---
 
