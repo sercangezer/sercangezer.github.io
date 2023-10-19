@@ -11,6 +11,8 @@ tags:
 minute: 1
 ---
 
+![](../images/2023/20231017-linux-rbenv-kurulum-ve-konfigurasyon.png)
+
 Esenlikler,
 
 Bu blogu [`Jekyll`](https://jekyllrb.com/) ile [`github-pages`](https://pages.github.com/) üzerinden host ediyorum. Bir modül denemek için ruby nin farklı bir versiyonu yüklü olması gerekiyormuş. Komple ruby silip o versiyonu yüklemek yerine [`rbenv`](https://github.com/rbenv/rbenv) ile herhangi bir şey silmeden istediğimiz ruby versiyonu yükleyip, onu kullanabiliyoruz.
