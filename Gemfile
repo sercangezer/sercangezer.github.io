@@ -10,3 +10,5 @@ gem 'wdm', '>= 0.1.0'
 
 # update ruby version
 gem 'webrick'
+
+gem "kramdown-syntax-coderay", "~> 1.0"
