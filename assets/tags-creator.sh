@@ -6,7 +6,7 @@ rm -rf /e/Git-repositories/sercangezer.github.io/tag/*
 
 for i in "${tags_array[@]}"
 do
-
+echo $i
 cd /e/Git-repositories/sercangezer.github.io/tag
  mkdir "$i"
 cd "/e/Git-repositories/sercangezer.github.io/tag/$i"
