@@ -21,7 +21,8 @@ Esenlikler,
 
 Belki bir gün başkalarına lazım olur diye buraya bırakıyorum.
 
-❗ Github üzerinden `Personel Access Token` oluşturmanız gerekmektedir.
+{% include admonition.html type="tip" title="Tip" body="❗ Github üzerinden <b>Personel Access Token</b> oluşturmanız gerekmektedir." %}
+
 
 ### Çalışma Algoritması
 
