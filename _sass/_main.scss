@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 *,
 :after,
 :before {
@@ -262,6 +264,7 @@ h1 {
   font-weight: bold;
   margin-bottom: 0.5rem;
   border-bottom: 1px dashed #bdbaba;
+  font-family: 'Anton', sans-serif;
   
 }
 
@@ -282,33 +285,39 @@ h5 {
 	font-weight: bold;
 	margin-bottom: 0.5rem;
 	font-size: 2rem;
+  font-family: 'Anton', sans-serif;
 }
 
 h2 {
 	font-size: 30px;
   color:#3498db;
   border-bottom: 1px dashed #bdbaba;
+  font-family: 'Anton', sans-serif;
 }
 
 h3 {
 	font-size: 28px;
   color: #aa4b80;
   border-bottom: 1px dashed #bdbaba;
+  font-family: 'Anton', sans-serif;
 }
 
 h4 {
 	font-size: 26px;
-  color: #f15a29
+  color: #f15a29;
+  font-family: 'Anton', sans-serif;
 }
 
 h5 {
 	font-size: 24px;
   color: #52057b;
+  font-family: 'Anton', sans-serif;
 }
 
 h6 {
 	font-size: 22px;
   color: #f15a29;
+  font-family: 'Anton', sans-serif;
 }
 
 section h1:first-child {
@@ -383,6 +392,7 @@ time {
 
 .post > h1.title {
 	font-size: xxx-large;
+  font-family: 'Anton', sans-serif;
 	margin-top: 0;
 	margin-bottom: 0;
   background: -webkit-linear-gradient(135deg, #86E5FF, #0081C9 );
