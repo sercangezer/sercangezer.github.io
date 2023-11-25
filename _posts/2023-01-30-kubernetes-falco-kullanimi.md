@@ -4,7 +4,7 @@ title: (CKS) Falco ile konteynır davranışlarını izlemek
 description: Kubernetes ortamında çalışan konteynırların Falco ile davranışlarını izlemek
 summary: Kubernetes ortamında çalışan konteynırların Falco ile davranışlarını izlemek
 tags: 
-  - [CKS,falco,Kubernetes,container,Analyzing Container Behavior with Falco]
+  - [CKS,Falco,Kubernetes,Container]
 minute: 1
 ---
 

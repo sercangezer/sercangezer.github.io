@@ -4,7 +4,7 @@ title: (CKS) Trivy, container imaj güvenlik açığı taramak
 description: Kubernetes ortamında kullanılan imajların güvenlik açıklarını kontrol etmek
 summary: Kubernetes ortamında kullanılan imajların güvenlik açıklarını kontrol etmek
 tags: 
-  - [CKS,trivy,Kubernetes,pod,container,imaj,CVE,güvenlik açığı]
+  - [CKS,Trivy,Kubernetes,Pod,Container,Imaj,CVE,Güvenlik açığı]
 minute: 1
 ---
 

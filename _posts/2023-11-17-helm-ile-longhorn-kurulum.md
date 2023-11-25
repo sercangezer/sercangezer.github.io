@@ -8,7 +8,7 @@ tags:
   - Longhorn
   - Helm
   - Rancher
-  - Distributed block storage
+  - Distributed Block Storage
 minute: 1
 ---
 

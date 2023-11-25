@@ -4,7 +4,7 @@ title: (CKS) Kubelet ve Kube-apiserver TLS Version ve Cipher atama
 description: Kubernetes Kube-apiserver ve Kubelet için minimum TLS version ve Cipher atama
 summary: Kubernetes Kube-apiserver ve Kubelet için minimum TLS version ve Cipher atama
 tags: 
-  - [CKS,minTtlsMinVersion,tlsCipherSuites,tls-cipher-suites,tls-min-version,kubelet,kube-apiserver,Kubernetes]
+  - [CKS,MinTtlsMinVersion,TlsCipherSuites,Tls-cipher-suites,Tls-min-version,Kubelet,Kube-apiserver,Kubernetes]
 minute: 1
 ---
 

@@ -4,7 +4,7 @@ title: (CKS) Immutable Pod tanımlama
 description: Kubernetes ortamda Immutable (Değişmez/Sabit) Pod tanımlama
 summary: Kubernetes ortamda Immutable (Değişmez/Sabit) Pod tanımlama
 tags: 
-  - [CKS,immutable,immutable pod,immutable container,container security context,privileged,allowPrivilegeEscalation,readOnlyRootFilesystem,Kubernetes]
+  - [CKS,Immutable,Immutable Pod,Immutable Container,Container Security Context,Privileged,AllowPrivilegeEscalation,ReadOnlyRootFilesystem,Kubernetes]
 minute: 1
 ---
 

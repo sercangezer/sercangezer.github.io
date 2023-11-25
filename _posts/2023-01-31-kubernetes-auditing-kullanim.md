@@ -4,7 +4,7 @@ title: (CKS) Kubernetes Auditing Mekanizması
 description: Kubernetes ortamında Auditing Logging mekanizması ile kubernetes güvenliğinin sağlanması
 summary: Kubernetes ortamında Auditing Logging mekanizması ile kubernetes güvenliğinin sağlanması
 tags: 
-  - [CKS,auditing,logging,Kubernetes]
+  - [CKS,Auditing,Logging,Kubernetes]
 minute: 1
 ---
 

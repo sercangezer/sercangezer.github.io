@@ -4,7 +4,7 @@ title: (CKS) RuntimeClass atamak
 description: Kubernetes ortamda Pod'a RuntimeClass atamak
 summary: Kubernetes ortamda Pod'a RuntimeClass atamak
 tags: 
-  - [CKS, Kubernetes, pod, container, runtimeclass, gvisor, runsc, runc]
+  - [CKS, Kubernetes, Pod, Container, Runtimeclass, Gvisor, Runsc, Runc]
 minute: 1
 ---
 

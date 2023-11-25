@@ -4,7 +4,7 @@ title: (CKS) Dockerfile analizi
 description: Dockerfile analizi ile güvenlik açıklarını kapatmak
 summary: Dockerfile analizi ile güvenlik açıklarını kapatmak
 tags: 
-  - [CKS,dockerfile,container,image]
+  - [CKS,Dockerfile,Container,Image]
 minute: 1
 ---
 
