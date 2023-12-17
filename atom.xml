@@ -6,6 +6,7 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>{{ site.title }}</title>
+ <subtitle>{{ site.description }}</subtitle>
  <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
  <link href="{{ site.url }}{{ site.baseurl }}/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -14,10 +15,15 @@ layout: null
    <name>{{ site.author.name }}</name>
    <email>{{ site.author.email }}</email>
  </author>
-
+ <category term="Linux"/>
+ <category term="Kubernetes"/>
+ <category term="DevOps"/>
+ <category term="Docker"/>
+ <category term="Shell Script"/>
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title | xml_escape }}</title>
+   <summary>{{ post.summary | xml_escape }}</summary>
    <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ post.id }}</id>
