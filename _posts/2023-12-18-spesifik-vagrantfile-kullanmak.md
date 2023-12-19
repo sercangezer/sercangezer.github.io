@@ -6,6 +6,7 @@ summary:  Geliştirme ortamlarında spesifik Vagrantfile ile çalışmak
 tags: 
   - Vagrant
   - Vagrantfile
+  - VirtualBox
 minute: 1
 ---
 
