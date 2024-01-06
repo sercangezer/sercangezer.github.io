@@ -30,6 +30,10 @@ permalink: pretty
 # url: "http://localhost:4000" # 
 # baseurl: "" # 
 
+# RSS
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
 
 markdown: kramdown
 highlighter: rouge
