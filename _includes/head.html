@@ -1,14 +1,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="google-adsense-account" content="ca-pub-7580703551356192">
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/syntax.css">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7580703551356192"
-     crossorigin="anonymous"></script>
-
 
   <title>
       {% if page.tag or page.title %}
@@ -47,5 +43,8 @@
     {% endcapture %}
     {{ include_to_scssify | scssify }}
   </style>
+
+<!--Google adsense tag-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7580703551356192" crossorigin="anonymous"></script>
 
 </head>
