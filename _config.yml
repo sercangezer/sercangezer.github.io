@@ -90,7 +90,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      image: assets/blog-cover-photo.jpg
+      image: /assets/blog-cover-photo.jpg
 
 relative_links:
   enabled:     true
