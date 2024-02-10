@@ -24,11 +24,11 @@
       {% endunless %}
     </title>
   
-    <!-- {% if page.image %}
-      <meta content="/img/srcset/{{ page.image }}" property="og:image">
+    {% if page.image %}
+      <meta content="{{ page.image }}" property="og:image">
     {% else %}
       <meta content="/assets/blog-cover-photo.jpg" property="og:image">
-    {% endif %} -->
+    {% endif %}
   
 
   
