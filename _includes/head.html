@@ -23,7 +23,13 @@
         - {{ site.description | escape }}
       {% endunless %}
     </title>
-  
+ 
+{% if page.description %}
+  <meta content="{{ page.description }}" name="description">
+{% else %}
+<meta content="{{ site.description }}" name="description">
+{% endif %}
+
 <!-- OpenGraph Meta Tags -->
 {% if page.image %}
   <meta content="{{ page.image }}" property="og:image">
