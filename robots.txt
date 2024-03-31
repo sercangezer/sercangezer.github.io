@@ -1,11 +1,6 @@
----
-layout: none
----
-
-
 User-agent: *
 Allow: /
 
-Sitemap: {{ site.url }}/sitemap.xml
-
-Sitemap: {{ site.url }}/atom.xml
+Sitemap: https://www.sercangezer.com.tr/sitemap.xml
+Sitemap: https://www.sercangezer.com.tr/atom.xml
+Sitemap: https://www.sercangezer.com.tr/feed-articles.xml
