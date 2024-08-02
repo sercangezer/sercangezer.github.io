@@ -11,10 +11,6 @@ tags:
 minute: 1
 ---
 
-
-
-![](../images/2023/20231224-klasorun-github-repoya-yeni-branch-olarak-pushlanmasi.png)
-
 Esenlikler,
 
 Farklı projelerde ve farklı makinelerde kod ve konfigürasyon senkronizasyonu sağlamak adına github ve branch yapısını kullanıyorum. Elle teker teker github komutları girmektense bunu bash script e çevirdim. Belki benim gibi sizin de ihtiyacı olabilir.
