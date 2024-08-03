@@ -10,8 +10,6 @@ tags:
 minute: 1
 ---
 
-<img id="gizle" src="../images/2023/2023-04-14-linux-raid-1-mirror-disk-yapilandirilmasi.jpg" width="75%" height="75%" hidden>
-
 
 ## Video
 
