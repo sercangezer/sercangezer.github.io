@@ -13,10 +13,11 @@ minute: 1
 
 Esenlikler,
 
+![](../images/2024/20240807-sonatype-nexus-repository-logo.png)
 
 Private Registry olarak çok yaygın kullanılan [Sonatype Nexus Repository](https://help.sonatype.com/en/sonatype-product-overview.html) yazılımını k3s üzerine hostPath olarak kuracağız.
 
-[Kubernetes Manifest dosyaları](https://github.com/sercangezer/sercangezer.github.io/tree/main/YOUTUBE/00-NexusInstallation)
+❗ [`Github` Kubernetes Manifest dosyaları](https://github.com/sercangezer/sercangezer.github.io/tree/main/YOUTUBE/00-NexusInstallation)
 
 # Kurulum
 
