@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "k3s üzerinde Nexus Repository kurulum"
+title: "Kubernetes üzerinde Nexus Repository kurulum"
 description: "Kubernetes üzerinde hostpath olarak Nexus Repository kurulum"
 summary: "Single node Kubernetes üzerinde hostpath olarak Nexus Repository kurulum"
 tags: 
   - Kubernetes
   - Sonatype Nexus Repository
   - Private Registry
+  - k3s
 minute: 1
 ---
 
