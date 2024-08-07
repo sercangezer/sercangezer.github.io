@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nexus-pv
+  labels:
+    pv: nexus-pv
+    type: local
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: ""
+  hostPath:
+    path: /nexus-data
+  claimRef:
+    name: nexus-pvc
+    namespace: nexus
+--- 
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: nexus-pvc
+  namespace: nexus
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: ""
+  resources:
+    requests:
+      storage: 30Gi
+  volumeName: nexus-pv
