@@ -6,6 +6,7 @@ summary: "Single node Kubernetes üzerinde hostpath olarak Nexus Repository kuru
 tags: 
   - Kubernetes
   - Sonatype Nexus Repository
+  - Private Registry
 minute: 1
 ---
 
@@ -15,11 +16,13 @@ Esenlikler,
 
 Private Registry olarak çok yaygın kullanılan [Sonatype Nexus Repository](https://help.sonatype.com/en/sonatype-product-overview.html) yazılımını k3s üzerine hostPath olarak kuracağız.
 
+[Kubernetes Manifest dosyaları](https://github.com/sercangezer/sercangezer.github.io/tree/main/YOUTUBE/00-NexusInstallation)
+
 # Kurulum
 
 1. Öncelikle bir kubernetes kurulu sunucunuz olmalı. Ben k3s kurulu bir tek makine (single node) kullanacağım.
 
-> Master & Worker lı bir multi node cluster ınız varsa hostPath sıkıntı çıkaracaktır. Dinamik provision kullanmanız gerekir.
+❗❗ Master & Worker lı bir multi node cluster ınız varsa hostPath sıkıntı çıkaracaktır. Dinamik provision kullanmanız gerekir.
 
 ```bash
 vagrant@server-0:~$ k get node -o wide
