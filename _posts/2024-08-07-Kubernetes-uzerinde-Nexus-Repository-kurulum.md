@@ -11,10 +11,16 @@ tags:
 minute: 1
 ---
 
+## Video
+
+<div align="center">
+<iframe class="youtube-video"  src="https://www.youtube.com/embed/jTb4EzwduHk?si=p3MJmCziQEAy4Zsz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+![](../images/2024/20240807-sonatype-nexus-repository-logo.png)
+
 
 Esenlikler,
 
-![](../images/2024/20240807-sonatype-nexus-repository-logo.png)
 
 Private Registry olarak çok yaygın kullanılan [Sonatype Nexus Repository](https://help.sonatype.com/en/sonatype-product-overview.html) yazılımını k3s üzerine hostPath olarak kuracağız.
 
